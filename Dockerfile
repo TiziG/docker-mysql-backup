@@ -1,3 +1,4 @@
 FROM deitch/mysql-backup
 
-RUN sudo apk add --no-cache tzdata
+USER root
+RUN apk add --no-cache tzdata
